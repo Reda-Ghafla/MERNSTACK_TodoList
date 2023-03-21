@@ -1,0 +1,136 @@
+.App {
+  max-width: 80vw;
+  background-color: rgba(0, 255, 255, 0.103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5rem;
+  /* position: relative; */
+}
+
+.alert {
+  background-color: lightcoral;
+  columns: #eee;
+}
+.grand__title {
+  font-size: 1.8rem;
+}
+
+form {
+  /* background-color: blueviolet; */
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button,
+input {
+  outline: none;
+  min-width: 20vw;
+  padding: 0.2rem 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
+}
+.input__desc {
+  height: 5rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 0.8rem;
+  width: 20vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  resize: none;
+}
+button {
+  background-color: rgb(194, 194, 36);
+  color: #000022;
+  cursor: pointer;
+  padding: 0.2rem 10rem;
+}
+
+.mylist {
+  width: 70vw;
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.todo {
+  background-color: rgba(0, 255, 255, 0.103);
+  min-width: 90%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.edit,
+.delete {
+  size: 10rem;
+  cursor: pointer;
+}
+.edit {
+  color: green;
+}
+
+.delete {
+  color: red;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 50%);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.modal_under {
+  position: relative;
+  background-color: whitesmoke;
+  height: 30vw;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close > * {
+  position: absolute;
+  right: 10px;
+  top: 10px ;
+  /* height: 10vh; */
+  font-size: 2rem;
+  background-color: #000022;
+  color: red;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.close>*:hover{
+  background-color: rgb(22, 15, 15);
+  color: #fff;
+
+}
