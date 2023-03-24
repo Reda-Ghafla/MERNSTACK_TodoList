@@ -5,7 +5,8 @@
     "scripts": {
         "build": "echo \"No build specified\" && exit 1",
         "test": "echo \"No test specified\" && exit 1",
-        "start": "node server.js"
+        "start": "node server.js",
+        "build" : "node server.js"
     },
     "repository": {
         "type": "git",
