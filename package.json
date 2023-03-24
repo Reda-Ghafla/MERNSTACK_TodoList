@@ -1,0 +1,20 @@
+{
+    "name": "MERNSTACK_TodoList",
+"version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "echo \"No build specified\" && exit 1",
+        "test": "echo \"No test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Reda-Ghafla/MERNSTACK_TodoList.git"
+    },
+    "author": "Reda",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Reda-Ghafla/MERNSTACK_TodoList/issues"
+    },
+    "homepage": "https://github.com/Reda-Ghafla/MERNSTACK_TodoList#readme"
+}
