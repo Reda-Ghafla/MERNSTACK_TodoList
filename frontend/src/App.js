@@ -15,7 +15,7 @@ import Modal from "./components/Modal";
 //   }
 // };
 
-const baseURL= "https://mernstack-todo-list.vercel.app/"
+const baseURL= "https://mernstack-todo-list.vercel.app"
 
 function App() {
   const [myValue, setMyValue] = useState({
@@ -86,7 +86,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://mernstack-todo-list.vercel.app/api/todos`);
+      const response = await axios.get(`${baseURL}/api/todos`);
       setList(response.data);
     } catch (error) {
       console.error(error.message);
