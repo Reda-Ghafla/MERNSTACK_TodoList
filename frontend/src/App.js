@@ -15,6 +15,8 @@ import Modal from "./components/Modal";
 //   }
 // };
 
+const baseURL= "https://mernstack-todo-list.vercel.app/"
+
 function App() {
   const [myValue, setMyValue] = useState({
     _id: "",
@@ -37,7 +39,7 @@ function App() {
 
       // ajoutiw value db
       axios
-        .post(`http://localhost:5000/api/todos`, myValue)
+        .post(`${baseURL}/api/todos`, myValue)
         .then((response) => {
           setList([
             ...list,
@@ -73,7 +75,7 @@ function App() {
   const deleteHandler = (id) => {
     // const deleteToDo = list.filter((item)=>item._id !== id)
     axios
-      .delete(`http://localhost:5000/api/todos/${id}`)
+      .delete(`${baseURL}/api/todos/${id}`)
       .then((response) => {
         console.log(response.message);
         setAlertText("Deleted");
@@ -84,7 +86,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/todos`);
+      const response = await axios.get(`${baseURL}/api/todos`);
       setList(response.data);
     } catch (error) {
       console.error(error.message);
