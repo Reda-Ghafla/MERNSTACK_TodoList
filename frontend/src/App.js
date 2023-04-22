@@ -86,7 +86,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`${baseURL}/api/todos`);
+      const response = await axios.get(`https://mernstack-todo-list.vercel.app/api/todos`);
       setList(response.data);
     } catch (error) {
       console.error(error.message);
