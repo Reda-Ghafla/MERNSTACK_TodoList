@@ -2,11 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "To Do List Back End ",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "build" : "node server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build" : "node index.js"
   },
   "keywords": [
     "Mern",
